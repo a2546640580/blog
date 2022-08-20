@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>find grep查找命令 | 猪都能上天</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css">
+    <link rel="icon" href="https://www.zpzpup.com/assets/image/favicon.ico">
+    <script src="/blog/assets/js/bodyClick.js"></script>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.926438e8.css" as="style"><link rel="preload" href="/blog/assets/js/app.8aac5d28.js" as="script"><link rel="preload" href="/blog/assets/js/3.7ffce9fa.js" as="script"><link rel="preload" href="/blog/assets/js/1.5d4d7656.js" as="script"><link rel="preload" href="/blog/assets/js/57.beac4428.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.a2b5fc05.js"><link rel="prefetch" href="/blog/assets/js/11.be973094.js"><link rel="prefetch" href="/blog/assets/js/12.3ccd2617.js"><link rel="prefetch" href="/blog/assets/js/13.72896176.js"><link rel="prefetch" href="/blog/assets/js/14.95e5a462.js"><link rel="prefetch" href="/blog/assets/js/15.e5960827.js"><link rel="prefetch" href="/blog/assets/js/16.b9ff6024.js"><link rel="prefetch" href="/blog/assets/js/17.a6c7b415.js"><link rel="prefetch" href="/blog/assets/js/18.2a8420cd.js"><link rel="prefetch" href="/blog/assets/js/19.f2351ee4.js"><link rel="prefetch" href="/blog/assets/js/20.a4389cdc.js"><link rel="prefetch" href="/blog/assets/js/21.23545664.js"><link rel="prefetch" href="/blog/assets/js/22.e6457c5b.js"><link rel="prefetch" href="/blog/assets/js/23.bdccd4ee.js"><link rel="prefetch" href="/blog/assets/js/24.0106b30b.js"><link rel="prefetch" href="/blog/assets/js/25.12270408.js"><link rel="prefetch" href="/blog/assets/js/26.4f087df5.js"><link rel="prefetch" href="/blog/assets/js/27.7f96d405.js"><link rel="prefetch" href="/blog/assets/js/28.f9f05b27.js"><link rel="prefetch" href="/blog/assets/js/29.3091307d.js"><link rel="prefetch" href="/blog/assets/js/30.8a6daabc.js"><link rel="prefetch" href="/blog/assets/js/31.6d37a02f.js"><link rel="prefetch" href="/blog/assets/js/32.962a7b7b.js"><link rel="prefetch" href="/blog/assets/js/33.9e22a33d.js"><link rel="prefetch" href="/blog/assets/js/34.71f07e35.js"><link rel="prefetch" href="/blog/assets/js/35.8ae40741.js"><link rel="prefetch" href="/blog/assets/js/36.dd84552f.js"><link rel="prefetch" href="/blog/assets/js/37.b4955df3.js"><link rel="prefetch" href="/blog/assets/js/38.fc563ed2.js"><link rel="prefetch" href="/blog/assets/js/39.0ce6d1a3.js"><link rel="prefetch" href="/blog/assets/js/4.11cf51cf.js"><link rel="prefetch" href="/blog/assets/js/40.fb749ac7.js"><link rel="prefetch" href="/blog/assets/js/41.9119a6f0.js"><link rel="prefetch" href="/blog/assets/js/42.d248bc0a.js"><link rel="prefetch" href="/blog/assets/js/43.98ca23a0.js"><link rel="prefetch" href="/blog/assets/js/44.870ac06e.js"><link rel="prefetch" href="/blog/assets/js/45.bf05197a.js"><link rel="prefetch" href="/blog/assets/js/46.b8b7e93a.js"><link rel="prefetch" href="/blog/assets/js/47.36f03d2c.js"><link rel="prefetch" href="/blog/assets/js/48.41378742.js"><link rel="prefetch" href="/blog/assets/js/49.d111b8b7.js"><link rel="prefetch" href="/blog/assets/js/5.3ceaa160.js"><link rel="prefetch" href="/blog/assets/js/50.4cfa57f0.js"><link rel="prefetch" href="/blog/assets/js/51.3788fa5f.js"><link rel="prefetch" href="/blog/assets/js/52.ca4ebd96.js"><link rel="prefetch" href="/blog/assets/js/53.a2a7928f.js"><link rel="prefetch" href="/blog/assets/js/54.92cd1edc.js"><link rel="prefetch" href="/blog/assets/js/55.723976bc.js"><link rel="prefetch" href="/blog/assets/js/56.f59b9880.js"><link rel="prefetch" href="/blog/assets/js/58.f65deda1.js"><link rel="prefetch" href="/blog/assets/js/59.1c592652.js"><link rel="prefetch" href="/blog/assets/js/6.688a0433.js"><link rel="prefetch" href="/blog/assets/js/60.be951d1e.js"><link rel="prefetch" href="/blog/assets/js/61.5f0e298e.js"><link rel="prefetch" href="/blog/assets/js/62.41d1a26b.js"><link rel="prefetch" href="/blog/assets/js/63.c3db3443.js"><link rel="prefetch" href="/blog/assets/js/64.23702208.js"><link rel="prefetch" href="/blog/assets/js/65.027770a7.js"><link rel="prefetch" href="/blog/assets/js/66.b7c0f268.js"><link rel="prefetch" href="/blog/assets/js/67.ef0867c2.js"><link rel="prefetch" href="/blog/assets/js/68.a72b007c.js"><link rel="prefetch" href="/blog/assets/js/7.c9f6a61a.js"><link rel="prefetch" href="/blog/assets/js/8.b46b2f85.js"><link rel="prefetch" href="/blog/assets/js/9.9f18aab2.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.926438e8.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7a6c954e><div data-v-7a6c954e><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-7a6c954e data-v-7a6c954e><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-548f7490 data-v-7a6c954e data-v-7a6c954e><h3 class="title" style="display:none;" data-v-548f7490 data-v-548f7490>猪都能上天</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-548f7490 data-v-548f7490><input type="password" value="" data-v-548f7490> <span data-v-548f7490>Konck! Knock!</span> <button data-v-548f7490>OK</button></label> <div class="footer" style="display:none;" data-v-548f7490 data-v-548f7490><span data-v-548f7490><i class="iconfont reco-theme" data-v-548f7490></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-548f7490>vuePress-theme-reco</a></span> <span data-v-548f7490><i class="iconfont reco-copyright" data-v-548f7490></i> <a data-v-548f7490><span data-v-548f7490>sg</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-7a6c954e><header class="navbar" data-v-7a6c954e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="https://www.zpzpup.com/assets/image/avatar.png" alt="猪都能上天" class="logo"> <span class="site-name">猪都能上天</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  随意一点的主页
+</a></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  莫名其妙的时间轴
+</a></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  踩坑避雷请注意
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      很厉害的文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/docs/jottings/Git命令清单.html" class="nav-link"><i class="iconfont undefined"></i>
+   工作学习
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/vue/ref.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3.0
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/delicacys/无油捞汁粉丝.html" class="nav-link"><i class="iconfont undefined"></i>
+  吃吃吃
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我吧
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/JabinPeng" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7a6c954e></div> <aside class="sidebar" data-v-7a6c954e><div class="personal-info-wrapper" data-v-ec2c9702 data-v-7a6c954e><img src="https://www.zpzpup.com/assets/image/avatar.png" alt="author-avatar" class="personal-img" data-v-ec2c9702> <h3 class="name" data-v-ec2c9702>
+    sg
+  </h3> <div class="num" data-v-ec2c9702><div data-v-ec2c9702><h3 data-v-ec2c9702>4</h3> <h6 data-v-ec2c9702>文章</h6></div> <div data-v-ec2c9702><h3 data-v-ec2c9702>5</h3> <h6 data-v-ec2c9702>标签</h6></div></div> <hr data-v-ec2c9702></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link"><i class="iconfont reco-home"></i>
+  随意一点的主页
+</a></div><div class="nav-item"><a href="/blog/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  莫名其妙的时间轴
+</a></div><div class="nav-item"><a href="/blog/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  踩坑避雷请注意
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      很厉害的文章
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/docs/jottings/Git命令清单.html" class="nav-link"><i class="iconfont undefined"></i>
+   工作学习
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/vue/ref.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue3.0
+</a></li><li class="dropdown-item"><!----> <a href="/blog/docs/delicacys/无油捞汁粉丝.html" class="nav-link"><i class="iconfont undefined"></i>
+  吃吃吃
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系我吧
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/JabinPeng" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-548f7490 data-v-7a6c954e><h3 class="title" style="display:none;" data-v-548f7490 data-v-548f7490>find grep查找命令</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-548f7490 data-v-548f7490><input type="password" value="" data-v-548f7490> <span data-v-548f7490>Konck! Knock!</span> <button data-v-548f7490>OK</button></label> <div class="footer" style="display:none;" data-v-548f7490 data-v-548f7490><span data-v-548f7490><i class="iconfont reco-theme" data-v-548f7490></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-548f7490>vuePress-theme-reco</a></span> <span data-v-548f7490><i class="iconfont reco-copyright" data-v-548f7490></i> <a data-v-548f7490><span data-v-548f7490>sg</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-7a6c954e><main class="page"><div class="page-title" style="display:none;"><h1>find grep查找命令</h1> <div data-v-01d8a6a8><i class="iconfont reco-account" data-v-01d8a6a8><span data-v-01d8a6a8>sg</span></i> <i class="iconfont reco-date" data-v-01d8a6a8><span data-v-01d8a6a8>2022-08-17</span></i> <i class="iconfont reco-eye" data-v-01d8a6a8><span id="/blog/docs/delicacys/find%E5%91%BD%E4%BB%A4.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-01d8a6a8><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-01d8a6a8><span class="tag-item" data-v-01d8a6a8>linux命令</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="find命令基本使用"><a href="#find命令基本使用" class="header-anchor">#</a> find命令基本使用</h2> <p><strong>语法格式</strong>：find [路径] [参数] [查找和搜索范围]</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>find /etc -name &quot;*.conf“
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>常用参数</strong>：</p> <table><thead><tr><th>-name</th> <th>按名称查找</th></tr></thead> <tbody><tr><td>-size</td> <td>按大小查找</td></tr> <tr><td>-user</td> <td>按属性查找</td></tr> <tr><td>-type</td> <td>按类型查找</td></tr> <tr><td>-iname</td> <td>忽略大小写</td></tr></tbody></table> <h2 id="grep命令基本使用"><a href="#grep命令基本使用" class="header-anchor">#</a> grep命令基本使用</h2> <p>Grep称为全局<a href="https://so.csdn.net/so/search?q=%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">正则表达式<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>检索工具</p> <p><strong>语法格式</strong>：grep -option（参数） ‘word’（关键词） file（文本文件）；</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>grep &quot;quail&quot; /etc/passwd -n -s
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>grep参数：</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>-a 不要忽略二进制数据。
+-A&lt;显示列数&gt; 除了显示符合范本样式的那一行之外，并显示该行之后的内容。
+-b 在显示符合范本样式的那一行之外，并显示该行之前的内容。
+-c 计算符合范本样式的列数。
+-C&lt;显示列数&gt;或-&lt;显示列数&gt;  除了显示符合范本样式的那一列之外，并显示该列之前后的内容。
+-d&lt;进行动作&gt; 当指定要查找的是目录而非文件时，必须使用这项参数，否则grep命令将回报信息并停止动作。
+-e&lt;范本样式&gt; 指定字符串作为查找文件内容的范本样式。
+-E 将范本样式为延伸的普通表示法来使用，意味着使用能使用扩展正则表达式。
+-f&lt;范本文件&gt; 指定范本文件，其内容有一个或多个范本样式，让grep查找符合范本条件的文件内容，格式为每一列的范本样式。
+-F 将范本样式视为固定字符串的列表。
+-G 将范本样式视为普通的表示法来使用。
+-h 在显示符合范本样式的那一列之前，不标示该列所属的文件名称。
+-H 在显示符合范本样式的那一列之前，标示该列的文件名称。
+-i 忽略字符大小写的差别。
+-l 列出文件内容符合指定的范本样式的文件名称。
+-L 列出文件内容不符合指定的范本样式的文件名称。
+-n 在显示符合范本样式的那一列之前，标示出该列的编号。
+-q 不显示任何信息。
+-R/-r 此参数的效果和指定“-d recurse”参数相同。
+-s 不显示错误信息。
+-v 反转查找。
+-w 只显示全字符合的列。
+-x 只显示全列符合的列。
+-y 此参数效果跟“-i”相同。
+-o 只输出文件中匹配到的部分。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div id="goTop" class="hide-cat" data-v-bf92849a></div><div></div><div id="live2d-widget" class="live2d-widget-container" style="position:fixed;left:65px;bottom:0px;width:135px;height:300px;z-index:99999;opacity:1;pointer-events:none;"><canvas id="live2d_canvas" width="135" height="300" class="live2d_canvas" style="position:absolute;left:0px;top:0px;width:135px;height:300px;"></canvas></div></div></div>
+    <script src="/blog/assets/js/app.8aac5d28.js" defer></script><script src="/blog/assets/js/3.7ffce9fa.js" defer></script><script src="/blog/assets/js/1.5d4d7656.js" defer></script><script src="/blog/assets/js/57.beac4428.js" defer></script>
+  </body>
+</html>
