@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-e44a45fe","path":"/blogs/essay/2020/university.html","title":"记我的大学","lang":"en-US","frontmatter":{"title":"记我的大学","date":"2020-03-24T00:00:00.000Z","tags":["生活"],"categories":["随笔"],"next":"/blogs/essay/2021/warm","prev":"/blogs/essay/2019/dream"},"headers":[],"git":{},"filePathRelative":"blogs/essay/2020/university.md"}');export{e as data};

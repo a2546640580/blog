@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-65f08cd6","path":"/blogs/essay/2019/dream.html","title":"没有理想的人不伤心","lang":"en-US","frontmatter":{"title":"没有理想的人不伤心","date":"2019-08-04T00:00:00.000Z","tags":["生活"],"categories":["随笔"],"next":"/blogs/essay/2020/university","prev":"/blogs/essay/2019/football"},"headers":[],"git":{},"filePathRelative":"blogs/essay/2019/dream.md"}');export{e as data};
