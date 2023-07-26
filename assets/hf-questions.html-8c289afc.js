@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as s,a as o}from"./app-a8bec4e8.js";const c={},n=o("p",null,"学习中",-1),_=[n];function a(r,l){return t(),s("div",null,_)}const i=e(c,[["render",a],["__file","hf-questions.html.vue"]]);export{i as default};

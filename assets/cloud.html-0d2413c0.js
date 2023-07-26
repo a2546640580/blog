@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-4c5b27aa","path":"/blogs/essay/2023/cloud.html","title":"今天的天空像夹心饼干","lang":"en-US","frontmatter":{"title":"今天的天空像夹心饼干","date":"2023-06-25T00:00:00.000Z","tags":["生活"],"categories":["随笔"],"next":false,"prev":"/blogs/essay/2021/warm"},"headers":[],"git":{},"filePathRelative":"blogs/essay/2023/cloud.md"}');export{e as data};
